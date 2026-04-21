@@ -436,21 +436,29 @@ export default function App() {
         </section>
       </main>
 
-      <footer className="w-full mt-4 mb-2 flex flex-col md:flex-row justify-between items-center border-t border-slate-200 pt-3 text-[10px] text-slate-500 font-medium tracking-wide gap-y-1">
-        <p className="">© 2026 Ferra Coffrets — Tous droits réservés.</p>
-        <div className="flex flex-wrap justify-center md:justify-end items-center gap-x-6 gap-y-1">
+      <footer className="w-full mt-4 mb-2 flex items-center border-t border-slate-200 pt-3 text-base text-slate-500 font-medium tracking-wide gap-6 text-left whitespace-nowrap overflow-x-auto">
+        <p className="whitespace-nowrap">© 2026 Ferra Coffrets</p>
+        <div className="flex flex-nowrap justify-start items-center gap-x-6 text-left whitespace-nowrap">
           <span className="text-slate-800 font-bold border-r border-slate-200 pr-6 last:border-0">Formateur : Oussama Berraies</span>
-          <a href="tel:+21699442879" className="flex items-center gap-1.5 hover:text-blue-600 transition-all cursor-pointer">
+          <a href="tel:+21699442879" className="flex items-center gap-1.5 hover:text-blue-600 transition-all cursor-pointer whitespace-nowrap">
             <Phone size={12} className="text-blue-500" />
             (+216) 99 44 28 79
           </a>
-          <a href="mailto:oberraies@gmail.com" className="flex items-center gap-2 hover:text-blue-600 transition-all cursor-pointer">
+          <a href="mailto:oberraies@gmail.com" className="flex items-center gap-2 hover:text-blue-600 transition-all cursor-pointer whitespace-nowrap">
             <Mail size={12} className="text-blue-500" />
             oberraies@gmail.com
+          </a>
+          <a
+            href="https://oussama-berraies.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-blue-600 transition-all cursor-pointer whitespace-nowrap"
+          >
+            <Globe size={12} className="text-blue-500" />
+            oussama-berraies.vercel.app
           </a>
         </div>
       </footer>
     </div>
   );
 }
-
